@@ -1,9 +1,10 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
 }
-.bold{
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
-h1{
-    color: aqua;
+h1 {
+  color: aqua;
 }
