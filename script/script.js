@@ -40,7 +40,8 @@ document.getElementById("target").onclick = function () {
     document.getElementById("totalWaktu").innerHTML = totalWaktu + "s";
     setTopScore();
   }
-};
+}
+
 function hideImage() {
   document.getElementById("target").style.display = "none";
 }
