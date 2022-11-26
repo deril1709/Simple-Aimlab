@@ -2,7 +2,11 @@ let count = 1;
 var start = "";
 var end = "";
 var totalWaktu = "";
-var topScore = localStorage.getItem("topScore");
+
+if (localStorage.getItem("topscore") !== null) {
+  var topScore = localStorage.getItem("topScore");
+  document.getElementById("topScore").innerHTML = topScore + "s";
+}
 
 //tampilkan gambar target (random)
 function tampilkanGambar() {
@@ -30,17 +34,19 @@ document.getElementById("target").onclick = function () {
   setTimeout(hideImage, 500);
 
   // set total waktu
-  if (count <= 10) {
+  if (count <= 5) {
     setTimeout(tampilkanGambar, 600);
     count++;
   } else {
-    alert("selesai");
+    setTimeout(function () {
+      alert("selesai");
+    }, 100);
     end = new Date().getTime();
     totalWaktu = (end - start) / 1000;
     document.getElementById("totalWaktu").innerHTML = totalWaktu + "s";
     setTopScore();
   }
-}
+};
 
 function hideImage() {
   document.getElementById("target").style.display = "none";
