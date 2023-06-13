@@ -42,7 +42,7 @@ document.getElementById("target").onclick = function () {
       alert("selesai");
     }, 100);
     end = new Date().getTime();
-    totalWaktu = (end - start) / 1000;
+    totalWaktu = (end - start) / 5000;
     document.getElementById("totalWaktu").innerHTML = totalWaktu + "s";
     setTopScore();
   }
