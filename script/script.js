@@ -28,7 +28,7 @@ tampilkanGambar();
 //function untuk mengganti gambar
 
 document.getElementById("target").onclick = function () {
-  document.getElementById("target").src = "img/boom.png";
+  document.getElementById("target").src = "img/boomz.png";
   document.getElementById("target").style.height = 120 + "px";
   document.getElementById("target").style.width = 120 + "px";
   setTimeout(hideImage, 500);
