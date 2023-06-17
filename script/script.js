@@ -25,7 +25,7 @@ function tampilkanGambar() {
 }
 tampilkanGambar();
 
-//function untuk mengganti gambar
+// ganti gambar
 
 document.getElementById("target").onclick = function () {
   document.getElementById("target").src = "img/boomz.png";
@@ -42,7 +42,7 @@ document.getElementById("target").onclick = function () {
       alert("selesai");
     }, 100);
     end = new Date().getTime();
-    totalWaktu = (end - start) / 5000;
+    totalWaktu = (end - start) / 2000;
     document.getElementById("totalWaktu").innerHTML = totalWaktu + "s";
     setTopScore();
   }
@@ -59,5 +59,6 @@ function setTopScore() {
     localStorage.setItem("topScore", totalWaktu);
     document.getElementById("topScore").innerHTML = totalWaktu + "s";
   } else {
+    alert("ggwp");
   }
 }
